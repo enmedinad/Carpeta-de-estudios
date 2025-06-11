@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>devChallenges.io | Minimal Blog Card</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Sora", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      main{
+        min-height: 100vh;
+      }
+
+
+
+      /* Card Styles */
+      .card-body {
+        margin: 164px auto auto auto;
+        width: 368px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+        border-radius: 10px;
+      }
+      .card-body .card-image {
+        width: 368px;
+        height: 152px;
+        border-radius: 20px;
+        padding: 16px;
+      }
+      .card-body .card-tag {
+        padding: 6px 16px;
+        margin: 0 16px;
+        width: min-content;
+        background-color: #F2EAFD;
+        color: #7C19EE;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 50px;
+      }
+      .card-body .card-title {
+        padding: 16px 16px 0 16px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #20293A;
+      }
+      .card-body .card-description {
+        font-size: 14px;
+        color: #394150;
+        line-height: 20px;
+        margin: 0;
+        padding: 0 16px;
+      }
+      .card-body .card-footer {
+        margin: 20px 0 0 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #394150;
+        border-top: 2px solid #E5EAF0;
+      }
+      .card-body .card-footer p{
+        padding: 0 16px;
+        font-size: 12px;
+      }
+
+
+
+
+
+
+
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1><!--Filler--></h1>
+      <!--Empty-->
+    </header>
+
+
+    <main>
+      <div class="card-body">
+        <img class="card-image" src="resources/Cactus.jpg" alt="Macetero conteniendo un cactús">
+        <div class="card-tag">Design</div>
+        <h2 class="card-title">Embracing Minimalism</h2>
+        <p class="card-description">From minimalist sculptures to minimalist paintings, 
+          this blog will inspire you to appreciate the beauty 
+          that lies in simplicity.</p>
+        <div class="card-footer"><p>Annie Spratt</p></div>
+      </div>
+    </main>
+
+
+    <footer class="author-info">
+      Coded by <a href="#">Enzo Medina</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </footer>
+  </body>
+</html>
