@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tiny Challenge of HTML and CSS - Neswletter Challenge">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Join Our Newsletter | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body{
+        background-color: #F9FAFB;
+        overflow-x: hidden;
+      }
+ 
+      main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .newsletter-box {
+        width: 640px;
+        padding: 0 24px;
+        text-align: center;
+      }
+      .newsletter-box img {
+        height: 75px;
+        width: 75px;
+      }
+      .newsletter-box h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin: 5px 0 25px 0;
+        color: #000;
+      }
+      .newsletter-box p {
+        color: #6C727F;
+        font-weight: 400;
+        font-size: 17px;
+        margin-bottom: 45px;
+      }
+
+
+
+
+      .newsletter-box .newsletter-form {
+        width: 100%;
+        border-radius: 16px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+      }
+      .newsletter-box .newsletter-form input {
+        padding: 16px 0;
+        border-radius: 8px;
+        border: 1px solid #6c727f70;
+        background-color: #6c727f0c;
+        margin-bottom: 20px;
+      }
+      .newsletter-box .newsletter-form input:focus{
+        outline: none;
+        text-align: center;
+      }
+      .newsletter-box .newsletter-form input::placeholder {
+        text-align: center;
+        color: #394150;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .newsletter-box .newsletter-form button {
+        background-color: #284BCE;
+        border-radius: 8px;
+        padding: 16px 0;
+        border: 1px solid #6c727f70;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+
+      .newsletter-box .newsletter-form p {
+        margin-bottom: 0;
+        margin-top: 20px;
+        text-align: start;
+        color: #394150;
+        font-size: 14px;
+      }
+
+
+
+
+
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <!-- Filler -->
+    </header>
+
+
+    <main>
+      <div class="newsletter-box">
+        <img src="resources/logo.svg" alt="Logo of a brand for newsletter">
+        <h1>Join our newsletter</h1>
+        <p>Keep up with our latest collections, exclusive deals, 
+          and special offers! We introduce a new collection every week, 
+          so stay tuned to snag the hottest items just for you.</p>
+        <form action="#" class="newsletter-form" method="#">
+          <input type="text" placeholder="Enter your email address" class="newsletter-email">
+          <button type="submit" class="newsletter-submit">Subscribe now</button>
+          <p>Your email is 100% confidential and won’t send you any spam.</p>
+        </form>
+      </div>
+    </main>
+
+
+
+    <footer class="author-info">
+      Coded by <a href="#">Enzo Medina</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </footer>
+  </body>
+</html>
