@@ -1,21 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Index para ver todos mis desafios.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Index para ver todos mis desafios." />
     <title>EnDev Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--Style on page-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      :root {
+        --body-background: #0b1b1e;
+        --body-border-decoration: #153f51;
+        --body-text-color: #cacace;
+
+        --primary-color: #fff;
+        --secondary-color: #ff8a34;
+        --details-color: #007aff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Inter", sans-serif;
+        color: var(--primary-color);
+      }
+
+      body {
+        background-color: var(--body-background);
+        color: var(--body-text-color);
+        position: relative;
+        margin-top: 100px;
+        min-height: 100vh;
+        font-size: 16px;
+      }
+
+
+      header {
+        background-color: #0b1b1eaa;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        min-width: 800px;
+        padding: 10px 20px;
+        position: fixed;
+        top: 20px;
+        left: 16%;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px -3px #153f5140;
+        backdrop-filter: blur(8px);
+      }
+
+      header h1 span {
+        color: var(--secondary-color);
+      }
+
+      /* Estilos generales del navbar */
+      nav {
+        font-family: "Inter", sans-serif;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+      }
+
+      nav ul li {
+        position: relative;
+      }
+
+      nav a {
+        display: block;
+        padding: 15px 20px;
+        color: var(--details-color);
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      nav ul li:hover > a {
+        background-color: var(--details-color);
+        color: var(--body-background);
+      }
+
+      /* Dropdown: oculto por defecto */
+      .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--body-border-decoration);
+        padding-top: 10px;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 10;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      /* Al hacer hover sobre el elemento padre se muestra el dropdown */
+      nav ul li:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .dropdown a {
+        padding: 10px 20px;
+        gap: 5px;
+        white-space: nowrap;
+        border-radius: 0;
+      }
+
+      .dropdown a:nth-last-child(1){
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      /* Opcional: efecto hover en los links del dropdown */
+      .dropdown a:hover {
+        background-color: var(--details-color);
+        color: var(--primary-color);
+      }
+
+      #ContactButton {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        padding: 20px 25px;
+        border-radius: 15px;
+        border: none;
+        transition: ease-in-out .3s;
+      }
+      #ContactButton:hover{
+        box-shadow: 0 10px 15px -3px #153f5140;
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    </style>
+
+    <!--Header-->
     <header>
-        <!--Futuro Nav entre carpetas-->
+      <h1>En<span>Dev</span></h1>
+      <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Proyectos</a>
+                <div class="dropdown">
+                    <a href="#">Frontend</a>
+                    <a href="#">FullStack</a>
+                    <a href="#">Backend</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Acerca de mi</a>
+                <div class="dropdown">
+                    <a href="#">Mi Historia</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+      <button id="ContactButton">Contactame</button>
     </header>
+    <!--Header-->
+
     <main>
-        <h1>Mis desafios completados</h1>
-        <p>En desarrollo.</p>
+        <section>
+            <h2></h2>
+            <p></p>
+            <div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <h2></h2>
+            <p></p>
+            <div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <h2></h2>
+            <p></p>
+            <div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <h2></h2>
+            <p></p>
+            <div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </section>
     </main>
-    <Footer>
-        <!--Futuro Footer aqui.-->
-    </Footer>
-</body>
+
+
+
+
+    <footer>
+      <!--Futuro Footer aqui.-->
+    </footer>
+  </body>
 </html>
