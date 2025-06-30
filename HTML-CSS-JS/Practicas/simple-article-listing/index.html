@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      header {
+        width: 368px;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 40px;
+      }
+
+      header h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+      }
+      
+      header img {
+        width: 180px;
+        margin: auto;
+      }
+
+      main div span {
+        font-size: 0.875rem;
+      }
+
+      main div h2 {
+        font-size: 1.25rem;
+      }
+
+
+      main {
+        margin: auto;
+        width: 1050px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 40px;
+      }
+
+      main img {
+        border-radius: 10px;
+      }
+
+      main .box-card {
+        display: flex;
+        gap: 50px;
+      }
+
+      main .text-card {
+        padding: 30px 0;
+        font-weight: 400;
+        color: #000000;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      main span {
+        color: #4D5562;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 75%;
+        text-align: center;
+      }
+
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <header>
+      <h1>We release interesting articles about <br> technology</h1>
+      <img src="resources/Seperator.svg" alt="Text Separator">
+    </header>
+
+    <main>
+      <div class="box-card">
+        <img src="resources/photo_1.png" alt="Comfy bed on top of a piramid">
+        <div class="text-card">
+          <h2>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h2>
+          <span>November 12, 2024</span>
+        </div>
+      </div>
+      <div class="box-card">
+        <img src="resources/photo_3.png" alt="Gem Stone with grass decoration">
+        <div class="text-card">
+          <h2>The Future of AI: How Machine Learning is Revolutionizing Industries</h2>
+          <span>November 12, 2024</span>
+        </div>
+      </div>
+      <div class="box-card">
+        <img src="resources/photo_2.png" alt="Cube made of Glass">
+        <div class="text-card">
+          <h2>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</h2>
+          <span>November 12, 2024</span>
+        </div>
+      </div>
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Enzo Medina</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a>.
+    </div>
+  </body>
+</html>
